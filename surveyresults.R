@@ -18,7 +18,18 @@ results = results %>% mutate(country = case_when(tolower(Country) %in% c('us','u
                                                  TRUE~str_to_title(Country)))
                              
     
-table(results$country)
+sort(table(results$country))
 
 prop.table(table(results$`What is your current level of R knowledge?`))
+
+interests = c('Learning R (for those who are new to the language)',
+              'Learning new R skills, in a webinar',
+              'Learning new R skills, paired with one other person or a small group',
+              'Online Office hours about different topics, where you can drop in, as a question, about R, about consultant work, about a certain package, and get some help',
+              'Mentoring for folks at different career stages/experience levels',
+              'Talks about working remotely',
+              'Talks about doing R consulting part or fulltime',
+              'Talks about fighting prejudices (e.g. being a woman, being a mother, wanting to work remotely)',
+              'Resume or portfolio reviews')
+
 
