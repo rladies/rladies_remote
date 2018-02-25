@@ -7,7 +7,7 @@ results <- gs_title("R ladies remote") %>% gs_read
 
 table(results$Country)
  
-results = results %>% mutate(country = case_when((tolower(Country) %in% c('us','usa','south bend'))|grepl('united states',tolower(Country))|(Country=='Georgia'&City=='Atlanta')~'USA',
+results = results %>% mutate(country = case_when((tolower(Country) %in% c('us','usa','u.s.a.','south bend'))|grepl('united states',tolower(Country))|(Country=='Georgia'&City=='Atlanta')~'USA',
                                                  grepl('united kingdom|england|scotland|wales|reino unido',tolower(Country))|(tolower(Country)=='uk')~'UK',
                                                  grepl('new zealand|nz',tolower(Country))~'New Zealand',
                                                  grepl('germ|deutschland',tolower(Country))~'Germany',
