@@ -16,13 +16,14 @@ results = results %>% mutate(country = case_when((tolower(Country) %in% c('us','
                                                  grepl('netherland|holland',tolower(Country))~'Netherlands',
                                                  grepl('colombi',tolower(Country))~'Colombia',
                                                  tolower(Country) %in% c('spain','españa')~'Spain',
-                                                 tolower(Country) %in% c('italy','italia')~'Spain',
+                                                 tolower(Country) %in% c('italy','italia')~'Italy',
                                                  tolower(Country) %in% c('norge','norway')~'Norway',
                                                  tolower(Country) %in% c('brazil','brasil')~'Brazil',
                                                  TRUE~str_to_title(Country)))
                              
     
 sort(table(results$country))
+
 
 prop.table(table(results$`What is your current level of R knowledge?`))
 
