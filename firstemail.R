@@ -29,13 +29,15 @@ text1 = paste("Thank you for signing up to R-Ladies remote. We've had an incredi
 text2 = paste("We will be launching with out first event on Saturday 5th May at 3pm Mountain Daylight time (10pm BST, 11pm Europe, 7am 6th May Sydney, Australia).",
               "We are very lucky to have an R-Ladies superstar to launch our group.", 
               '<a href="https://juliasilge.com/">Julia Silge</a> is a remote Data Scientist for StackOverflow, has written a book on Textual Analytics and created numerous teaching courses on DataCamp.',
-              "Julia's talk is entitled 'Fighting the Pants Industrial Complex One Commit at a Time: Remote Working for R-Ladies'.",
+              "Julia's talk is entitled 'Working from Anywhere, One Commit at a Time: Remote Working for R-Ladies'.",
               "We will send out details for accessing the talk nearer the time, but please keep the time and date free!",sep=' ')
 
 text3 = paste("We also have an R-Ladies remote Slack Group. This will allow us to plan events, network and socialise remotely.",
               "During events we will have set social times on the Slack group to work together and meet people.",
-              "To access the slack group click on ...",sep=" ")
+              'To access the slack group click on this <a href="https://join.slack.com/t/rladies-remote/shared_invite/enQtMzU0MzIwNzUxOTU5LTM1MjA5OTJhNDg2N2FhM2Q0NGQyNmJmNjYzZDE2YmQxZmU1NTZmN2ZiYmMxNzRmNjlkZDQwNDBjZjczYjcyMDI">link</a> or email us at remote@rladies.org',sep=" ")
 text4 = paste("We look forward to welcoming you to our community.","The R Ladies Remote team (Abigail, Auriel and Steph)")
+
+text5 = 'p.s. We will keep you updated, through Slack, our <a href="https://twitter.com/RLadiesRemote">Twitter Feed</a> and email. If you want to be removed from the email list please reply to remote@rladies.org and let us know at any time.'
 
 body <- paste(" <html>
           <body>
